@@ -1,0 +1,15 @@
+include hyde.conf
+# This is the configuration file for kitty terminal
+font_family JetBrainsMono Nerd Font
+font_size 12.5
+enable_audio_bell no
+window_padding_width 5
+cursor_trail 1
+cursor_shape beam
+include onedark.conf
+background_opacity 0.90
+# BEGIN_KITTY_THEME
+# Argonaut
+include current-theme.conf
+# END_KITTY_THEME
+
