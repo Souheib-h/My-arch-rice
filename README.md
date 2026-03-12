@@ -26,3 +26,18 @@ dotfiles config --local status.showUntrackedFiles no
 
 ## 🔌 Tmux Plugins
 Plugins are managed via [tpm](https://github.com/tmux-plugins/tpm). After installing, press `prefix + I` to install.
+
+## 🙏 Credits
+
+Inspired by / configs adapted from:
+- [DT (DistroTube)](https://www.youtube.com/@DistroTube) — aliases
+- [henrymisc](https://www.youtube.com/@henrymisc) — zsh plugins & tmux theming
+
+
+## 🖼️ Wallpapers
+
+Wallpapers sourced from:
+- [omarchy](https://github.com/basecamp/omarchy) — by DHH
+- [DistroTube](https://www.youtube.com/@DistroTube)
+- [HyDE](https://github.com/HyDE-Project/Hyde-gallery)
+- [WallpaperFlare](https://www.wallpaperflare.com)
