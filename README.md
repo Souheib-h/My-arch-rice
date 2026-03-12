@@ -14,6 +14,8 @@
 | Multiplexer | Tmux |
 | Monitor | Btop |
 
+![desktop](screenshot.png)
+
 ## 📦 Installation
 ```bash
 git clone --bare https://github.com/Souheib-h/My-arch-rice.git $HOME/.dotfiles
