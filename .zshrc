@@ -62,6 +62,9 @@ alias f='fastfetch'
 alias rcp='rsync -av --info=progress2 --human-readable --stats'
 alias rmv='rsync -av --remove-source-files --info=progress2 --human-readable --stats'
 
+#Vms migration
+alias vms-migrate="$HOME/scripts/vms/Vms-migration.sh"
+
 alias s='sudo su '
 alias ss='sudo su -'
 alias b='btop'
