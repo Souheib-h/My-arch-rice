@@ -132,14 +132,23 @@ export QT_QPA_PLATFORMTHEME=qt5ct
 
 export TERM=xterm-256color
 # Always work in a tmux session if Tmux is installed
-if command -v tmux >/dev/null 2>&1 && [ -z "$TMUX" ]; then
+# if command -v tmux >/dev/null 2>&1 && [ -z "$TMUX" ]; then
+#     if ! tmux has-session -t Default 2>/dev/null; then
+#         tmux new-session -d -s Default 
+#         tmux source-file ~/.config/tmux/tmux.conf
+#     fi
+#     tmux attach -t Default
+# fi
+#
+
+# Always work in a tmux session if Tmux is installed (skip VSCode terminal)
+if command -v tmux >/dev/null 2>&1 && [ -z "$TMUX" ] && [ "$TERM_PROGRAM" != "vscode" ]; then
     if ! tmux has-session -t Default 2>/dev/null; then
         tmux new-session -d -s Default 
         tmux source-file ~/.config/tmux/tmux.conf
     fi
     tmux attach -t Default
 fi
-
 
 export EDITOR="nvim"
 export VISUAL="nvim"   # Some programs use VISUAL
