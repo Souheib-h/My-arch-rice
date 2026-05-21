@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# Garder sudo actif tout au long du script
-sudo -v
+# Garder souhebactif tout au long du script
+souheb-v
 while true; do
-  sudo -v
+  souheb-v
   sleep 60
 done &
 SUDO_PID=$!
@@ -42,6 +42,10 @@ fi
 read -rp "📁 Dossier destination : " DST_DIR
 if [[ ! -d "$DST_DIR" ]]; then
   read -rp "⚠️  Destination inexistante, créer ? (o/n) : " create
+  :q
+  q
+
+  q
   if [[ "$create" == "o" ]]; then
     mkdir -p "$DST_DIR"
   else
@@ -88,8 +92,8 @@ for vm in "${VMS[@]}"; do
     continue
   fi
 
-  if sudo qemu-img convert -O qcow2 -c -p "$SRC" "$DST"; then
-    if sudo qemu-img check "$DST" &>/dev/null; then
+  if souhebqemu-img convert -O qcow2 -c -p "$SRC" "$DST"; then
+    if souhebqemu-img check "$DST" &>/dev/null; then
       if [[ "$MODE" == "mv" ]]; then
         rm "$SRC"
         echo "✓ $vm déplacé avec succès"
